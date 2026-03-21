@@ -1,0 +1,93 @@
+.feedbacks {
+    background-color: #e8eee5;;
+}
+
+ .feedback-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 16px;
+
+    width: 343px;
+    height: 237px;
+    margin-bottom: 24px;
+} 
+
+.feedback-title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #010400
+}
+
+.feedback-title-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    color: #010400;
+}
+
+.feedback-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 24px;
+
+    width: 343px;
+}
+
+.feedback-list-element {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 24px;
+
+
+
+    border: 1px solid rgba(1, 4, 0, 0.15);
+    padding: 32px;
+    width: 100%;
+    height: 343px;
+    min-width: 300px;
+}
+
+.feedback-list-element-text {
+    font-weight: 400;
+        font-size: 18px;
+    
+        /* line-height: 27px; */
+        line-height: 1.5;
+        color: #010400;
+}
+
+.feedback-list-element-person-info {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    width: 279px;
+    margin-top: auto;
+}
+
+.feedback-list-element-img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feedback-list-element-name {
+    display: flex;
+        justify-content: center;
+        /* горизонталь */
+        align-items: center;
+        /* вертикаль */
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #010400;
+}
