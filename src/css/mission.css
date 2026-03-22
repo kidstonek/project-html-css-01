@@ -16,25 +16,25 @@
 
 .mission-title {
   margin: 0;
-  width: 100%;
+ 
   color: #ffffff;
   font-size: 36px;
   line-height: 1.2;
-  letter-spacing: -0.01em;
+  
 }
 
 .mission-text {
   margin: 0;
-  width: 100%;
+  
   color: #ffffff;
   font-size: 18px;
   line-height: 1.5;
-  letter-spacing: 0;
+  
 }
 
 .mission-picture {
   display: block;
-  width: 100%;
+  
 }
 
 .mission-image {
@@ -54,18 +54,16 @@
   }
 
   .mission-title {
-    width: 340px;
+    
     font-size: 36px;
   }
 
   .mission-text {
-    width: 340px;
+    
     font-size: 18px;
   }
 
-  .mission-image {
-    width: 100%;
-  }
+  
 }
 
 /* desktop */
@@ -80,16 +78,14 @@
   }
 
   .mission-title {
-    width: 644px;
+    
     font-size: 48px;
   }
 
   .mission-text {
-    width: 644px;
+   
     font-size: 18px;
   }
 
-  .mission-image {
-    width: 100%;
-  }
+  
 }
