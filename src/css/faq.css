@@ -1,0 +1,71 @@
+/* ----- FAQ ------*/
+.faq-section{
+    background-color: #5E8A4D;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+}
+.faq-title{
+font-size: 36px;
+line-height: 1.2;
+color: #fff;
+}
+.faq-description{
+font-weight: 400;
+font-size: 18px;
+line-height: 1.5;
+color: #fff;
+padding-bottom: 16px;
+}
+.title-section{
+    display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+gap: 8px;
+width: 343px;
+
+}
+.faq-question{
+font-weight: 700;
+font-size: 18px;
+line-height: 1.5;
+color: #fff;
+display: flex;
+width: 100%;
+justify-content: space-between;
+}
+.faq-icon{
+    fill: #fff;
+stroke-width: 1px;
+stroke: #fff;
+}
+.faq-answer{
+    font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+color: #fff;
+width: 100%;
+padding-bottom: 24px;
+}
+.faq-subtitle{
+display: flex;
+align-items: center;
+justify-content: flex-between;
+flex-direction: row;
+border-top: 1px solid rgba(255, 255, 255, 0.2);
+height: 72px;
+  width: 100%;
+
+}
+.faq-item{
+    width: 100%;
+  display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+gap: 0px;
+}
