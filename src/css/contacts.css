@@ -1,9 +1,15 @@
+.section {
+  background-color: rgba(232, 238, 229, 1);
+}
 .container-contacts {
-  min-width: 320px;
   margin: auto;
   padding: 0 16px;
   height: 100%;
-  background-color: rgba(232, 238, 229, 1);
+}
+@media only screen and (min-width: 768px) {
+  .container-contacts {
+    padding: 0 32px;
+  }
 }
 @media only screen and (min-width: 1440px) {
   .container-contacts {
@@ -21,21 +27,19 @@
 }
 .subtitle-contacts {
   font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
+  /*font-size: 16px;*/
+  /*line-height: 1.5;*/
   margin-bottom: 16px;
 }
 .title-contacts {
-  font-weight: 400;
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: -0.01em;
   margin-bottom: 24px;
 }
 .description-contacts {
-  font-weight: 400;
   font-size: 18px;
-  line-height: 1.5;
+
   margin-bottom: 32px;
 }
 .contact-adress {
@@ -47,7 +51,6 @@
   margin-bottom: 32px;
 }
 .list {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   margin-left: 16px;
