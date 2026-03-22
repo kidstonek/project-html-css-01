@@ -1,6 +1,5 @@
 .header {
   width: 100%;
-  min-width: 375px;
   background: #5E8A4D;
   color: #FFFFFF;
   position: relative;
@@ -11,7 +10,8 @@
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
-  padding: 14px 18px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -29,11 +29,17 @@
 .header__link {
   color: #FFFFFF;
   text-decoration: none;
+  cursor: pointer;
+  transition:
+    color 220ms ease,
+    transform 220ms ease;
 }
 
-.header__link:focus {
+.header__link:hover,
+.header__link:focus-visible {
   color: #dcdcdc;
   transform: scale(1.02);
+  outline: none;
 }
 
 .header__nav--desktop,
@@ -85,9 +91,15 @@
 .header__order--tablet,
 .header__order--modal {
   color: #FFFFFF;
+  cursor: pointer;
   transition:
     background-color 220ms ease,
     border-color 220ms ease;
+}
+
+.header__logo {
+  display: inline-flex;
+  cursor: pointer;
 }
 
 .header__order:hover,
@@ -215,7 +227,8 @@
 @media (min-width: 768px) {
   .header__inner {
     height: 72px;
-    padding: 0 32px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .header__order--tablet {
@@ -234,7 +247,7 @@
 
   .header__modal-content {
     width: 286px;
-    height: 812px;
+    height: 100dvh;
     padding: 0;
     border-left: 1px solid #000000;
     box-shadow: -10px 0 28px rgba(1, 4, 0, 0.3);
@@ -334,7 +347,8 @@
   }
 
   .header__inner {
-    padding: 18px 40px;
+    padding-top: 18px;
+    padding-bottom: 18px;
     align-items: center;
   }
 
