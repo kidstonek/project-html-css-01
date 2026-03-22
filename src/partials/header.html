@@ -1,3 +1,107 @@
 <header class="header">
-  <div class="container"></div>
+  <div class="header__inner container">
+    <a href="#home" class="header__logo" aria-label="Organic Shop Home">
+      <svg class="header__logo-icon" width="142" height="60" aria-hidden="true">
+        <use xlink:href="img/icons.svg#LOGOHEADER"></use>
+      </svg>
+    </a>
+
+    <nav class="header__nav header__nav--desktop" aria-label="Primary">
+      <ul class="header__list">
+        <li><a class="header__link" href="#home">Home</a></li>
+        <li><a class="header__link" href="#mission">Mission</a></li>
+        <li><a class="header__link" href="#benefits">Benefits</a></li>
+        <li><a class="header__link" href="#assorts">Assorts</a></li>
+        <li><a class="header__link" href="#feedbacks">Feedbacks</a></li>
+        <li><a class="header__link" href="#faq">FAQ</a></li>
+        <li><a class="header__link" href="#contacts">Contacts</a></li>
+        <li><a href="#assorts" class="header__order header__order--desktop">Order</a></li>
+      </ul>
+    </nav>
+
+    <a href="#assorts" class="header__order header__order--tablet">Order</a>
+
+    <button class="header__burger" type="button" aria-label="Open menu">
+      <svg class="header__burger-icon" width="24" height="24" aria-hidden="true">
+        <use xlink:href="img/icons.svg#burger-icon-mobile"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="header__modal" id="headerModal" aria-hidden="true">
+    <div class="header__modal-overlay"></div>
+    <div class="header__modal-content" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+      <div class="header__modal-top">
+        <a href="#home" class="header__logo header__logo--modal" aria-label="Organic Shop Home">
+          <svg class="header__logo-icon" width="142" height="60" aria-hidden="true">
+            <use xlink:href="img/icons.svg#LOGOHEADER"></use>
+          </svg>
+        </a>
+        <button class="header__modal-close" type="button" aria-label="Close menu">
+          <svg class="header__close-icon" width="20" height="20" aria-hidden="true">
+            <use xlink:href="img/icons.svg#modal-closeX-mobile"></use>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="header__nav header__nav--mobile" aria-label="Mobile">
+        <ul class="header__list header__list--mobile">
+          <li><a class="header__link" href="#home">Home</a></li>
+          <li><a class="header__link" href="#mission">Mission</a></li>
+          <li><a class="header__link" href="#benefits">Benefits</a></li>
+          <li><a class="header__link" href="#assorts">Assorts</a></li>
+          <li><a class="header__link" href="#feedbacks">Feedbacks</a></li>
+          <li><a class="header__link" href="#faq">FAQ</a></li>
+          <li><a class="header__link" href="#contacts">Contacts</a></li>
+          <li><a href="#assorts" class="header__order header__order--modal">Order</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 </header>
+
+<script>
+  (function () {
+    const header = document.querySelector('.header');
+    if (!header) return;
+
+    const modal = header.querySelector('.header__modal');
+    const burger = header.querySelector('.header__burger');
+    const close = header.querySelector('.header__modal-close');
+    const links = header.querySelectorAll('.header__modal .header__link');
+    const overlay = header.querySelector('.header__modal-overlay');
+
+    const openMenu = () => {
+      modal.classList.add('is-open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    };
+
+    const closeMenu = () => {
+      modal.classList.remove('is-open');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    };
+
+    burger.addEventListener('click', openMenu);
+    close.addEventListener('click', closeMenu);
+    overlay.addEventListener('click', closeMenu);
+
+    links.forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && modal.classList.contains('is-open')) {
+        closeMenu();
+      }
+    });
+
+    const resizeObserver = new ResizeObserver(() => {
+      if (window.innerWidth >= 1440) {
+        closeMenu();
+      }
+    });
+    resizeObserver.observe(document.body);
+  })();
+</script>
