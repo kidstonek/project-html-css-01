@@ -79,6 +79,31 @@
   box-sizing: border-box;
 }
 
+/* ===== Order buttons interactions ===== */
+.header__order,
+.header__order--desktop,
+.header__order--tablet,
+.header__order--modal {
+  color: #FFFFFF;
+  transition:
+    background-color 220ms ease,
+    border-color 220ms ease;
+}
+
+.header__order:hover,
+.header__order--desktop:hover,
+.header__order--tablet:hover,
+.header__order--modal:hover,
+.header__order:focus-visible,
+.header__order--desktop:focus-visible,
+.header__order--tablet:focus-visible,
+.header__order--modal:focus-visible {
+  background: #FFFFFF;
+  border-color: #FFFFFF;
+  color: #000000;
+  outline: none;
+}
+
 /* ===== Modal ===== */
 .header__modal {
   position: fixed;
