@@ -97,6 +97,11 @@
 .header__order--modal {
   color: #FFFFFF;
   cursor: pointer;
+  font-family: 'Public Sans', sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 500;
+  text-align: center;
   transition:
     background-color 220ms ease,
     border-color 220ms ease;
@@ -179,13 +184,25 @@
   padding: 0;
   gap: 8px;
   opacity: 1;
+  transition: color 220ms ease;
 }
 
 .header__modal-close svg {
   width: 20px;
   height: 20px;
-  stroke: #FFFFFF;
-  fill: #FFFFFF;
+  stroke: currentColor;
+  fill: currentColor;
+  transition: stroke 220ms ease, fill 220ms ease;
+}
+
+.header__modal-close:hover,
+.header__modal-close:focus-visible {
+  color: #767B74;
+  outline: none;
+}
+
+.header__modal-close:active {
+  color: #767B74;
 }
 
 .header__nav--mobile {
@@ -222,10 +239,8 @@
   padding: 12px 8px;
   color: #FFFFFF;
   font-size: 16px;
-  font-weight: 700;
   text-decoration: none;
   box-sizing: border-box;
-  font-family: 'Public Sans', sans-serif;
 }
 
 /* ===== Tablet: 768-1439 ===== */
