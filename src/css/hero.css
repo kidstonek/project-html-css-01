@@ -6,7 +6,7 @@
 .hero-section{
   background-image: 
     linear-gradient(#00000080, #00000080), 
-    url("/img/hero/hero-image.png");       
+    url("/img/hero/hero-image-mobile.jpg");       
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -16,22 +16,11 @@
 }
 
 /* Retina 2x */
-@media only screen and (-webkit-min-device-pixel-ratio: 2), 
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
        only screen and (min-resolution: 192dpi) {
   .hero-section {
-    background-image: 
-      linear-gradient(#00000080, #00000080), 
-      url("/img/hero/hero-image@2x.png");
-  }
-}
-
-/* Retina 3x */
-@media only screen and (-webkit-min-device-pixel-ratio: 3), 
-       only screen and (min-resolution: 288dpi) {
-  .hero-section {
-    background-image: 
-      linear-gradient(#00000080, #00000080), 
-      url("/img/hero/hero-image@3x.png");
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      url("/img/hero/hero-image-mobile@2x.jpg");
   }
 }
 
@@ -89,8 +78,21 @@
   .hero-section .container {
     max-width: 768px;
     margin: 0;
+    
   }
 
+ .hero-section {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("/img/hero/hero-image-tablet.jpg");
+  }
+
+/* Tablet Retina 2x */
+ @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      url("/img/hero/hero-image-tablet@2x.jpg");
+  }
+}
   .hero-wrapper {
     max-width: 611px;
     width: 100%;
@@ -120,6 +122,19 @@
     margin: 0 auto;  
     padding: 0 64px;
   }
+
+.hero-section {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("/img/hero/hero-image-desktop.jpg");
+  }
+
+/* Desktop Retina 2x */
+  @media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      url("/img/hero/hero-image-desktop@2x.jpg");
+  }
+}
 
   .hero-wrapper {
     width: 646px;
