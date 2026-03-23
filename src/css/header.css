@@ -27,16 +27,24 @@
   color: #FFFFFF;
   text-decoration: none;
   cursor: pointer;
-  transition:
-    color 220ms ease,
-    transform 220ms ease;
+  transition: color 220ms ease;
 }
 
 .header__link:hover,
 .header__link:focus-visible {
-  color: #dcdcdc;
-  transform: scale(1.02);
+  color: #767B74;
   outline: none;
+}
+
+.header__link:active {
+  color: #767B74;
+}
+
+.header__link.is-disabled,
+.header__link[aria-disabled='true'] {
+  color: #A5ACA2;
+  pointer-events: none;
+  cursor: default;
 }
 
 .header__nav--desktop,
