@@ -21,7 +21,6 @@
     gap: 16px;
 
     width: auto;
-    /* /* height: 237px; */
     margin-bottom: 24px;
 } 
 
@@ -33,18 +32,15 @@
 }
 
 @media only screen and (min-width: 1440px) {
-    .feedback-box {
-    
+    .feedback-box { 
         padding: 0 334px;
         margin-bottom: 80px;
     }
 }
 
 .feedback-title {
-    font-weight: 400;
     font-size: 36px;
     line-height: 1.2;
-    letter-spacing: -0.01em;
     text-align: center;
   
 }
