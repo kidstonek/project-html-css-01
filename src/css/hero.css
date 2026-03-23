@@ -70,9 +70,12 @@
   letter-spacing: 0;
   cursor: pointer; 
   transition: background-color 0.3s;
+  
+  
 }
 .hero-button:hover {
-  background-color: #e0e0e0; 
+  background-color: #5e8a4d; 
+  
 }
 @media screen and (min-width: 768px) {
   .hero-section .container {
