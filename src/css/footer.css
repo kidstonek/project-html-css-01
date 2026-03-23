@@ -57,6 +57,18 @@
 .footer__nav-link {
   color: #FFFFFF;
   text-decoration: none;
+  cursor: pointer;
+  transition: color 220ms ease;
+}
+
+.footer__nav-link:hover,
+.footer__nav-link:focus-visible {
+  color: #767B74;
+  outline: none;
+}
+
+.footer__nav-link:active {
+  color: #767B74;
 }
 
 .footer__socials {
@@ -78,6 +90,18 @@
   justify-content: center;
   width: 44px;
   height: 44px;
+  cursor: pointer;
+  transition: color 220ms ease;
+}
+
+.footer__social-link:hover,
+.footer__social-link:focus-visible {
+  color: #767B74;
+  outline: none;
+}
+
+.footer__social-link:active {
+  color: #767B74;
 }
 
 .footer__social-icon {
