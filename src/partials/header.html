@@ -69,6 +69,7 @@
     const burger = header.querySelector('.header__burger');
     const close = header.querySelector('.header__modal-close');
     const links = header.querySelectorAll('.header__modal .header__link');
+    const modalOrder = header.querySelector('.header__modal .header__order');
     const overlay = header.querySelector('.header__modal-overlay');
 
     const openMenu = () => {
@@ -90,6 +91,10 @@
     links.forEach(link => {
       link.addEventListener('click', closeMenu);
     });
+
+    if (modalOrder) {
+      modalOrder.addEventListener('click', closeMenu);
+    }
 
     document.addEventListener('keydown', event => {
       if (event.key === 'Escape' && modal.classList.contains('is-open')) {
