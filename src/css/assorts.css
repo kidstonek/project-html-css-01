@@ -1,0 +1,200 @@
+.assortment {
+    background-color: #d1ddcc;
+}
+
+.assortment-label {
+   
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #010400;
+
+}
+.assortment-title {
+   
+    margin-bottom: 32px;
+    max-width: 344px;
+    line-height: 1.2;
+    font-size: 36px;
+   
+
+}
+
+
+
+
+
+.assortment-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  
+}
+
+.assortment-item {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: 100%;
+}
+
+.assortment-picture {
+    display: block;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.assortment-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.assortment-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;  
+    padding-top: 16px;
+    gap: 16px;
+}
+
+.assortment-top {
+    
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;   
+    column-gap: 12px;
+    align-items: start;
+}
+
+.assortment-text-wrap {
+
+   
+    min-width: 0;
+}
+
+.assortment-price-wrap {
+
+    flex-shrink: 0;
+    min-width: 58px;
+    text-align: right;
+    
+ 
+}
+
+.assortment-name {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.5;
+   
+}
+
+.assortment-description {
+   
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+   
+}
+
+.assortment-price {
+    
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.assortment-unit {
+    /* margin: 0; */
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.3;
+    text-align: right;
+}
+
+.assortment-btn {
+    width: 100%;
+    height: 40px;
+    margin-top: auto;
+    padding: 8px 16px;
+    border: 1px solid rgba(1, 4, 0, 0.15);
+    border-radius: 6px;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    transition: background-color 250ms ease, border-color 250ms ease,
+                color 250ms ease;
+        }
+  
+  
+    
+ 
+.assortment-btn:hover,
+.assortment-btn:focus {
+    background-color: #1a5901;
+    border-color: #1a5901;
+    color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .assortment-list {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 16px;
+            row-gap: 16px;
+        }
+    
+    .assortment-description {
+        
+        margin: 0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.5;
+        overflow-wrap: break-word;
+        }
+
+    .assortment-picture {
+        height: 300px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+   
+        .assortment-title {
+            max-width: 768px;
+            font-size: 48px;
+        }
+    
+        .assortment-list {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+        .assortment-picture {
+            width: 310px;
+            height: 364px;
+        }
+
+        .assortment-description {
+           min-height: 42px;
+        
+        }
+    
+        .assortment-item {
+            min-height: 527px;
+        }
+    
+    
+    
+      
+        .assortment-price-wrap {
+            max-width: 55px;
+        }
+    
+      .assortment-price {
+            font-size: 20px;
+        }
+    }
