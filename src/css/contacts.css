@@ -1,32 +1,21 @@
 .section-contacts {
   background-color: rgba(232, 238, 229, 1);
 }
-.container-contacts {
-  padding: 0 16px;
-  height: 100%;
-}
-@media only screen and (min-width: 768px) {
-  .container-contacts {
-    padding: 0 32px;
-  }
-}
+
 @media only screen and (min-width: 1440px) {
   .container-contacts {
-    padding: 0 64px;
+    
     display: flex;
     gap: 24px;
     justify-content: space-between;
   }
+    .content {
+      width: 50%;
+    }
 }
-@media only screen and (min-width: 1440px) {
-  .content {
-    width: 50%;
-  }
-}
+
 .subtitle-contacts {
   font-weight: 600;
-  /*font-size: 16px;*/
-  /*line-height: 1.5;*/
   margin-bottom: 16px;
 }
 .title-contacts {
@@ -40,7 +29,7 @@
 
   margin-bottom: 32px;
 }
-.contact-adress {
+.contact-address {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -51,7 +40,7 @@
 .list {
   font-size: 16px;
   line-height: 1.5;
-  margin-left: 16px;
+  
   color: rgba(1, 4, 0, 1);
   text-decoration: underline;
   text-decoration-skip-ink: none;
@@ -88,6 +77,14 @@
   outline: none;
   margin-top: 8px;
 }
+.contact-list-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.contact-list-icon {
+  flex-shrink: 0;
+}
 .text-invalid {
   font-weight: 400;
   font-size: 12px;
@@ -99,9 +96,10 @@
   color: red;
   border-bottom: 1px solid red;
 }
-.contacts-input:invalid ~ .text-invalid {
+.contacts-input:not(:placeholder-shown):invalid~.text-invalid {
   display: block;
 }
+ 
 .contacts-form-messager {
   display: flex;
   align-items: flex-start;
@@ -117,68 +115,66 @@
   color: rgba(1, 4, 0, 1);
   padding: 12px 12px 0 12px;
   resize: none;
+  
 }
 .contacts-messege:invalid {
   color: red;
   border-color: red;
 }
 .contacts-btn-submit {
-  border: 1px solid rgba(26, 89, 1, 1);
+  border: 1px solid #1a5901;
   border-radius: 6px;
   padding-block: 6px;
   padding-inline: 12px;
   width: 100%;
   height: 40px;
-  margin-top: 24px;
-  background-color: rgba(26, 89, 1, 1);
+  margin-bottom: 32px;
+  background-color: #1a5901;
   transition:
-    background-color 220ms ease,
-    color 220ms ease;
+  background-color 220ms ease,
+  color 220ms ease;
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   color: rgba(255, 255, 255, 1);
-  border: none;
+  
 }
-.contacts-btn-submit:hover,
-.contacts-btn-submit:focus {
-  background-color: rgba(255, 255, 255, 1);
 
-  color: rgba(1, 4, 0, 1);
-}
 @media only screen and (min-width: 768px) {
   .contacts-btn-submit {
     width: 343px;
     height: 36px;
   }
+
+     .contacts-photo {
+       width: 100%;
+       height: auto;
+       margin-top: 24px;
+     }
 }
+
+
 @media only screen and (min-width: 1440px) {
+  .contacts-photo {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+
   .contacts-btn-submit {
     width: 198px;
     height: 36px;
   }
+
+  .contacts-btn-submit:hover,
+  .contacts-btn-submit:focus {
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    color: rgba(1, 4, 0, 1);
+        }
 }
 
-.contacts-photo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 32px;
-}
 
-@media only screen and (min-width: 768px) {
-  .contacts-photo {
-    width: 100%;
-    height: 637px;
-    margin-top: 24px;
-  }
-}
-@media only screen and (min-width: 1440px) {
-  .contacts-photo {
-    width: 100%;
-    height: 100%;
-    margin-top: 0;
-    padding-bottom: 0;
-  }
-}
+
