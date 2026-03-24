@@ -2,39 +2,43 @@
     background-color: #d1ddcc;
 }
 
-.assortment-container {
+.assortment-label {
+    /* margin: 0 0 16px; */
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #010400;
+
+}
+.assortment-title {
+    /* margin: 0 0 32px; */
+    margin-bottom: 32px;
+    max-width: 344px;
+    line-height: 1.2;
+    font-size: 36px;
+   
+
+}
+
+/* .assortment-container {
     width: 100%;
     max-width: 375px;
     margin: 0 auto;
     padding: 0 16px;
-}
+} */
 
-.assortment-label {
-    margin: 0 0 16px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.5;
 
-}
 
-.assortment-title {
-    font-weight: 400;
-    margin: 0 0 32px;
-    max-width: 288px;
-    line-height: 1.2;
-    font-size: 36px;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
 
-}
 
 .assortment-list {
     display: grid;
     grid-template-columns: 1fr;
     gap: 24px;
-    margin: 0;
+    /* margin: 0;
     padding: 0;
-    list-style: none;
+    list-style: none; */
 }
 
 .assortment-item {
@@ -53,7 +57,7 @@
 }
 
 .assortment-image {
-    display: block;
+    /* display: block; */
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -63,59 +67,62 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    height: 100%;
+    /* height: 100%; */
     padding-top: 16px;
     gap: 16px;
 }
 
 .assortment-top {
-    display: flex;
-    align-items: flex-start;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    /* align-items: flex-start;
     justify-content: space-between;
-    gap: 12px;
+    gap: 12px; */
+    column-gap: 12px;
+    align-items: start;
 }
 
 .assortment-text-wrap {
 
-    flex: 1;
+    /* flex: 1; */
     min-width: 0;
 }
 
 .assortment-price-wrap {
 
     flex-shrink: 0;
-    min-width: 52px;
+    min-width: 58px;
     text-align: right;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.5;
+    
+ 
 }
 
 .assortment-name {
-    margin: 0 0 8px;
+    margin-bottom: 8px;
     font-weight: 600;
     font-size: 18px;
     line-height: 1.5;
-    overflow-wrap: break-word;
+    /* overflow-wrap: break-word; */
 }
 
 .assortment-description {
-    margin: 0;
+    /* margin: 0; */
     font-weight: 400;
     font-size: 14px;
     line-height: 1.5;
-    overflow-wrap: break-word;
+    /* overflow-wrap: break-word; */
 }
 
 .assortment-price {
-    margin: 0;
+    /* margin: 0; */
     font-weight: 600;
     font-size: 20px;
     line-height: 1.5;
 }
 
 .assortment-unit {
-    margin: 0;
+    /* margin: 0; */
     font-weight: 400;
     font-size: 10px;
     line-height: 1.3;
@@ -123,12 +130,6 @@
 }
 
 .assortment-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    padding: 4px 10px;
-    flex-direction: row;
     width: 100%;
     height: 40px;
     margin-top: auto;
@@ -140,9 +141,18 @@
     font-size: 16px;
     line-height: 1.5;
     transition: background-color 250ms ease, border-color 250ms ease,
-        color 250ms ease;
-}
-
+                color 250ms ease;
+        }
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 4px 10px;
+    flex-direction: row; */
+    
+  
+    
+ 
 .assortment-btn:hover,
 .assortment-btn:focus {
     background-color: #1a5901;
@@ -151,6 +161,24 @@
 }
 
 @media only screen and (min-width: 768px) {
+/* 
+    .assortment-title {
+    
+    
+            /* margin: 0 0 32px;
+            max-width: 344px; */
+            /* line-height: 1.2;
+            font-size: 36px;
+            line-height: 1.2;
+            letter-spacing: -0.01em;
+/*     
+        } */ 
+
+    .assortment-list {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 16px;
+            row-gap: 16px;
+        }
     
     .assortment-description {
         
@@ -160,46 +188,30 @@
         line-height: 1.5;
         overflow-wrap: break-word;
         }
-    
+/*     
     .assortment-container {
         max-width: 768px;
         padding-left: 32px;
         padding-right: 32px;
-    }
+    } */
 
-    .assortment-title {
-
-
-        margin: 0 0 32px;
-            max-width: 288px;
-            line-height: 1.2;
-            font-size: 36px;
-            line-height: 1.2;
-            letter-spacing: -0.01em;
-       
-    }
-
-    .assortment-list {
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 24px;
-        row-gap: 24px;
-    }
+    
 
     .assortment-picture {
         height: 300px;
     }
-
+/* 
     .assortment-price-wrap {
-        min-width: 58px;
-    }
+        min-width: 57px;
+    } */
 }
 
 @media only screen and (min-width: 1440px) {
-    .assortment-container {
+    /* .assortment-container {
             max-width: 1312px;
             padding-left: 0;
             padding-right: 0;
-        }
+        } */
     
         .assortment-title {
             max-width: 768px;
@@ -207,45 +219,48 @@
         }
     
         .assortment-list {
-            grid-template-columns: repeat(4, 310px);
+            grid-template-columns: repeat(4, 1fr);
             gap: 24px;
+        }
+        .assortment-picture {
+            width: 310px;
+            height: 364px;
+        }
+
+        .assortment-description {
+           min-height: 42px;
+        
         }
     
         .assortment-item {
             min-height: 527px;
         }
     
-        .assortment-picture {
-            width: 310px;
-            height: 364px;
-        }
+    }
     
-        .assortment-top {
+        /* .assortment-top {
             gap: 0;
-        }
+        } */
     
         .assortment-price-wrap {
-            min-width: 58px;
+            max-width: 55px;
         }
     
-        .assortment-name {
+        /* .assortment-name {
             font-size: 18px;
         }
-    
-        .assortment-description {
-            min-height: 42px;
-            font-size: 14px;
-        }
-    
+     */
+      
+/*     
         .assortment-price {
             font-size: 20px;
         }
-    
-        .assortment-unit {
+     */
+        /* .assortment-unit {
             font-size: 10px;
-        }
+        } */
     
-        .assortment-btn {
+        /* .assortment-btn {
             font-size: 16px;
         }
-    }
+    } */
