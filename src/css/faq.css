@@ -1,25 +1,16 @@
 /* ----- FAQ ------*/
 .faq-section{
 background-color: #5E8A4D;}
-/* display: flex;
-align-items: flex-start;
-justify-content: flex-start;
-flex-direction: column;
-} */
+
  .faq-container {
 display: flex;
 flex-direction: column;
  }
 
  .title-section {
-     /* display: flex;
-align-items: flex-start;
-justify-content: flex-start;
-flex-direction: column;
-gap: 8px;
-width: 343px; */
+
      width: 100%;
-     /* margin-bottom: 40px; */
+
  } 
 
 
@@ -38,21 +29,13 @@ padding-bottom: 16px;
 }
 
 .faq-list {
-    /* display: flex;
-align-items: flex-start;
-justify-content: flex-start;
-flex-direction: column;
-gap: 0px; */
+
     width: 100%;
 }
 
 .faq-item {
     width: 100%;
-    /* display: flex;
-align-items: flex-start;
-justify-content: flex-start;
-flex-direction: column;
-gap: 0px; */
+
 }
 
 .faq-item:last-child {
@@ -64,9 +47,7 @@ gap: 0px; */
     align-items: center;
     justify-content: space-between;
     gap: 24px;
-    /* flex-direction: row; */
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    /* height: 72px; */
+    border-top: 1px solid rgba(255, 255, 255, 0.2); 
     padding: 22px 0;
     width: 100%;
 
@@ -77,14 +58,10 @@ font-weight: 700;
 font-size: 18px;
 line-height: 1.5;
 color: #fff;
-/* display: flex;
-width: 100%;
-justify-content: space-between; */
 }
 .faq-icon{
 flex-shrink: 0;
 fill: #fff;
-/* stroke-width: 1px; */
 stroke: #fff;
 }
 .faq-answer{
