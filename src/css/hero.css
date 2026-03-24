@@ -15,7 +15,6 @@
   align-items: flex-start;
 }
 
-/* Retina 2x */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
        only screen and (min-resolution: 192dpi) {
   .hero-section {
