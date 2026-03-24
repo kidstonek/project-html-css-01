@@ -3,7 +3,7 @@
 }
 
 .assortment-label {
-    /* margin: 0 0 16px; */
+   
     margin-bottom: 16px;
     font-weight: 600;
     font-size: 16px;
@@ -12,7 +12,7 @@
 
 }
 .assortment-title {
-    /* margin: 0 0 32px; */
+   
     margin-bottom: 32px;
     max-width: 344px;
     line-height: 1.2;
@@ -20,13 +20,6 @@
    
 
 }
-
-/* .assortment-container {
-    width: 100%;
-    max-width: 375px;
-    margin: 0 auto;
-    padding: 0 16px;
-} */
 
 
 
@@ -36,9 +29,7 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 24px;
-    /* margin: 0;
-    padding: 0;
-    list-style: none; */
+  
 }
 
 .assortment-item {
@@ -57,7 +48,6 @@
 }
 
 .assortment-image {
-    /* display: block; */
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -66,26 +56,22 @@
 .assortment-content {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
-    /* height: 100%; */
+    flex-grow: 1;  
     padding-top: 16px;
     gap: 16px;
 }
 
 .assortment-top {
-    /* display: flex; */
+    
     display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    /* align-items: flex-start;
-    justify-content: space-between;
-    gap: 12px; */
+    grid-template-columns: minmax(0, 1fr) auto;   
     column-gap: 12px;
     align-items: start;
 }
 
 .assortment-text-wrap {
 
-    /* flex: 1; */
+   
     min-width: 0;
 }
 
@@ -103,19 +89,19 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 1.5;
-    /* overflow-wrap: break-word; */
+   
 }
 
 .assortment-description {
-    /* margin: 0; */
+   
     font-weight: 400;
     font-size: 14px;
     line-height: 1.5;
-    /* overflow-wrap: break-word; */
+   
 }
 
 .assortment-price {
-    /* margin: 0; */
+    
     font-weight: 600;
     font-size: 20px;
     line-height: 1.5;
@@ -143,13 +129,7 @@
     transition: background-color 250ms ease, border-color 250ms ease,
                 color 250ms ease;
         }
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    padding: 4px 10px;
-    flex-direction: row; */
-    
+  
   
     
  
@@ -161,18 +141,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-/* 
-    .assortment-title {
-    
-    
-            /* margin: 0 0 32px;
-            max-width: 344px; */
-            /* line-height: 1.2;
-            font-size: 36px;
-            line-height: 1.2;
-            letter-spacing: -0.01em;
-/*     
-        } */ 
 
     .assortment-list {
             grid-template-columns: repeat(2, 1fr);
@@ -188,31 +156,14 @@
         line-height: 1.5;
         overflow-wrap: break-word;
         }
-/*     
-    .assortment-container {
-        max-width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
-    } */
-
-    
 
     .assortment-picture {
         height: 300px;
     }
-/* 
-    .assortment-price-wrap {
-        min-width: 57px;
-    } */
 }
 
 @media only screen and (min-width: 1440px) {
-    /* .assortment-container {
-            max-width: 1312px;
-            padding-left: 0;
-            padding-right: 0;
-        } */
-    
+   
         .assortment-title {
             max-width: 768px;
             font-size: 48px;
@@ -236,31 +187,14 @@
             min-height: 527px;
         }
     
-    }
     
-        /* .assortment-top {
-            gap: 0;
-        } */
     
+      
         .assortment-price-wrap {
             max-width: 55px;
         }
     
-        /* .assortment-name {
-            font-size: 18px;
-        }
-     */
-      
-/*     
-        .assortment-price {
+      .assortment-price {
             font-size: 20px;
         }
-     */
-        /* .assortment-unit {
-            font-size: 10px;
-        } */
-    
-        /* .assortment-btn {
-            font-size: 16px;
-        }
-    } */
+    }
