@@ -29,7 +29,7 @@
   flex-direction: column; 
   align-items: flex-start; 
   text-align: left;      
-  width: 343px;
+  /* max-width: 343px; */
   width: 100%;
   padding: 183px 0;
   gap: 16px;
@@ -69,9 +69,7 @@
   line-height: 1.5;
   letter-spacing: 0;
   cursor: pointer; 
-  transition: background-color 0.3s;
-  
-  
+  transition: color 220ms ease;
 }
 .hero-button:hover {
   background-color: #5e8a4d; 
@@ -89,7 +87,7 @@
     url("/img/hero/hero-image-tablet.jpg");
   }
 
-/* Tablet Retina 2x */
+/* Tablet 2x */
  @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .hero-section {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
@@ -97,7 +95,7 @@
   }
 }
   .hero-wrapper {
-    max-width: 611px;
+    /* max-width: 611px; */
     width: 100%;
     padding: 234px 32px; 
   }
@@ -138,13 +136,13 @@
       url("/img/hero/hero-image-desktop@2x.jpg");
   }
 }
-
   .hero-wrapper {
     width: 646px;
     padding: 326px 0;
     margin-right: 730px;
   }
   .hero-wrapper h1{
+    width: 420px;
     font-size: 56px;
     font-weight: 400;
     line-height: 1.2;
@@ -162,5 +160,4 @@
     height: 36px;
     border: 1px solid black;
   }
-
 }
