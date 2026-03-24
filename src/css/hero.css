@@ -1,162 +1,182 @@
-.hero-section .container{
-   max-width: 375px;
-   width: 100%;
-   padding: 0 16px;
-}
-.hero-section{
+.hero-section {
   background-image: 
     linear-gradient(#00000080, #00000080), 
-    url("/img/hero/hero-image-mobile.jpg");       
+    url('/img/hero/hero-image-mobile.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
   display: flex;
   align-items: flex-start;
+  height: 630px;
+}
+
+.hero-section .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
        only screen and (min-resolution: 192dpi) {
   .hero-section {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-      url("/img/hero/hero-image-mobile@2x.jpg");
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('/img/hero/hero-image-mobile@2x.jpg');
   }
 }
 
-.hero-wrapper{
-   display: flex;           
-  flex-direction: column; 
-  align-items: flex-start; 
-  text-align: left;      
-  /* max-width: 343px; */
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
   width: 100%;
-  padding: 183px 0;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
   gap: 16px;
 }
 
-.hero-wrapper h1{
+.hero-wrapper h1 {
   width: 100%;
-    color: #FFFFFF;
-    font-size: 40px;
-    font-weight: 400;
-    margin-bottom: 8px;
-    line-height: 1,2;
-     letter-spacing: -0.01em;
-     margin: 0;
+  color: #FFFFFF;
+  font-family: "Chivo", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin: 0;
 }
-.hero-wrapper p{
-    color: #FFFFFF;
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 16px;
-    line-height: 1.5;
-    letter-spacing: 0;
-    margin: 0;
+
+.hero-wrapper p {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0;
+  margin: 0;
 }
-.hero-button{
+
+.hero-button {
   display: flex;
   align-items: center;
-  justify-content: center; 
-  width: 343px;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
   height: 40px;
   text-decoration: none;
   background-color: #FFFFFF;
-  color: #010400;          
+  color: #010400;
   border-radius: 6px;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0;
-  cursor: pointer; 
-  transition: color 220ms ease;
+  cursor: pointer;
+  transition: background-color 220ms ease, color 220ms ease;
 }
-.hero-button:hover {
-  background-color: #5e8a4d; 
-  
-}
-@media screen and (min-width: 768px) {
-  .hero-section .container {
-    max-width: 768px;
-    margin: 0;
-    
-  }
 
- .hero-section {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url("/img/hero/hero-image-tablet.jpg");
-  }
-
-/* Tablet 2x */
- @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
-  .hero-section {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-      url("/img/hero/hero-image-tablet@2x.jpg");
-  }
+.hero-button:hover,
+.hero-button:focus-visible {
+  background-color: #5e8a4d;
+  color: #FFFFFF;
+  outline: none;
 }
+
+@media screen and (min-width: 375px) {
   .hero-wrapper {
-    /* max-width: 611px; */
+    max-width: 343px;
+  }
+
+  .hero-button {
+    max-width: 343px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('/img/hero/hero-image-tablet.jpg');
+  }
+
+  .hero-wrapper {
+    max-width: 611px;
     width: 100%;
-    padding: 234px 32px; 
+    min-height: 162px;
   }
-  .hero-wrapper h1{
+
+  .hero-wrapper h1 {
     font-size: 40px;
+  }
+
+  .hero-wrapper p {
+    font-size: 18px;
     font-weight: 400;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
+    line-height: 1.5;
+    letter-spacing: 0;
   }
-  .hero-wrapper p{
-   font-size: 18px;
-   font-weight: 400;
-   line-height: 1.5;
-   letter-spacing: 0;
-  }
-  .hero-button{
+
+  .hero-button {
     width: 254px;
     height: 36px;
   }
-  
 }
-@media screen and (min-width: 1440px) {
-  .hero-section .container {
-    max-width: 1440px;
-    margin: 0 auto;  
-    padding: 0 64px;
-  }
 
-.hero-section {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url("/img/hero/hero-image-desktop.jpg");
-  }
-
-/* Desktop Retina 2x */
-  @media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+       screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .hero-section {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-      url("/img/hero/hero-image-desktop@2x.jpg");
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('/img/hero/hero-image-tablet@2x.jpg');
   }
 }
-  .hero-wrapper {
-    width: 646px;
-    padding: 326px 0;
-    margin-right: 730px;
+
+@media screen and (min-width: 1440px) {
+  .hero-section {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('/img/hero/hero-image-desktop.jpg');
+    height: 900px;
   }
-  .hero-wrapper h1{
-    width: 420px;
+
+  .hero-wrapper {
+    width: 100%;
+    max-width: 646px;
+    min-height: 248px;
+  }
+
+  .hero-wrapper h1 {
+    max-width: 646px;
+    width: 100%;
+    min-height: 134px;
     font-size: 56px;
     font-weight: 400;
     line-height: 1.2;
     letter-spacing: -0.01em;
   }
-  .hero-wrapper p{
-   font-size: 18px;
-   font-weight: 400;
-   line-height: 1.5;
-   letter-spacing: 0;
+
+  .hero-wrapper p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0;
   }
-  .hero-button{
+
+  .hero-button {
     width: 100%;
     max-width: 199px;
     height: 36px;
-    border: 1px solid black;
+  }
+}
+
+@media screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2),
+       screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+  .hero-section {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('/img/hero/hero-image-desktop@2x.jpg');
   }
 }
