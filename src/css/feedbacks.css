@@ -2,16 +2,7 @@
     background-color: #e8eee5;;
 }
 
-.container-feedbacks{
-    padding: 64px 16px;
-}
 
-@media only screen and (min-width: 1440px) {
-    .container-feedbacks {
-            padding: 112px 64px;
-        }
-
-}
 
  .feedback-box {
     display: flex;
@@ -88,6 +79,7 @@
 }
 
 @media only screen and (min-width: 768px) {
+   
     .feedback-list-element {
     width: calc((100% - 24px) / 2);
   }
