@@ -3,7 +3,7 @@
     linear-gradient(#00000080, #00000080), 
     url('/img/hero/hero-image-mobile.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
   width: 100%;
   display: flex;
