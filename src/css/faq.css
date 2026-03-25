@@ -9,8 +9,8 @@ flex-direction: column;
 
  .title-section {
 
-     width: 100%;
-
+  width: 100%;
+  margin-bottom: 16px;
  } 
 
 
@@ -25,7 +25,7 @@ font-weight: 400;
 font-size: 18px;
 line-height: 1.5;
 color: #fff;
-padding-bottom: 16px;
+
 }
 
 .faq-list {
@@ -35,11 +35,12 @@ padding-bottom: 16px;
 
 .faq-item {
     width: 100%;
-
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 22px 0 24px 0;
+  
 }
-
 .faq-item:last-child {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);;
 }
 
 .faq-subtitle {
@@ -47,8 +48,7 @@ padding-bottom: 16px;
     align-items: center;
     justify-content: space-between;
     gap: 24px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2); 
-    padding: 22px 0;
+    margin-bottom: 22px;
     width: 100%;
 
 }
@@ -70,22 +70,21 @@ font-size: 16px;
 line-height: 1.5;
 color: #fff;
 width: 100%;
-padding-bottom: 24px;
 }
 
 @media only screen and (min-width: 768px) {
   .title-section {
     max-width: 421px;
-    margin-bottom: 16px;
+    
   }
-  .faq-subtitle {
-    padding: 22px 0;
-
-  }
+ 
   .faq-answer {
     max-width: 704px;
     
   }
+    .faq-description {
+      max-width: 362px;
+    }
 }
 
 
@@ -96,6 +95,10 @@ flex-direction: row;
 align-items: flex-start;
 gap: 24px;
 }
+.faq-title {
+  margin-bottom: 24px;
+}
+
 .title-section{
 width: 421px;
 flex-shrink: 0;
