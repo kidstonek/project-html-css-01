@@ -3,12 +3,15 @@
     linear-gradient(#00000080, #00000080), 
     url('/img/hero/hero-image-mobile.jpg');
   background-size: cover;
-  background-position: center top;
+  background-position: center;
   background-repeat: no-repeat;
   width: 100%;
   display: flex;
   align-items: flex-start;
   height: 630px;
+  max-width: 375px;
+  margin: 0 auto;
+  
 }
 
 .hero-section .container {
@@ -100,6 +103,7 @@
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url('/img/hero/hero-image-tablet.jpg');
+      max-width: 768px;
   }
 
   .hero-wrapper {
@@ -140,6 +144,7 @@
       linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url('/img/hero/hero-image-desktop.jpg');
     height: 900px;
+    max-width: 1440px;
   }
 
   .hero-wrapper {
